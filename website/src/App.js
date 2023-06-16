@@ -44,7 +44,6 @@ export default class App extends Component {
             justifyContent: "center",
             alignItems: "center",
             color: "#fff",
-            fontFamily: 'Quicksand, "Helvetica Neue", sans-serif',
             pointerEvents: "none",
           }}
         >

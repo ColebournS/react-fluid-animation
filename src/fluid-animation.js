@@ -103,7 +103,13 @@ export default class FluidAnimation {
   }
 
   onMouseMove = (e) => {
-    this._pointers[0].moved = this._pointers[0].down
+    this._pointers[0].down = true
+    this._pointers[0].color = [
+      Math.random() + 0.2,
+      Math.random() + 0.2,
+      Math.random() + 0.2
+    ]
+    this._pointers[0].moved = true
     this._pointers[0].dx = (e.offsetX - this._pointers[0].x) * 10.0
     this._pointers[0].dy = (e.offsetY - this._pointers[0].y) * 10.0
     this._pointers[0].x = e.offsetX
